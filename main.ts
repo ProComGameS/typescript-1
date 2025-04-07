@@ -39,14 +39,15 @@ function sumArray(num_array: number[] = []) {
  *
  */
 
-type User = {}
+type User = {name: string, age: number, active: boolean}
 
-function createUser() {
-  // code here
+
+function createUser(name: string, age: number, active: boolean): User {
+  return {name, age, active}
 }
 
-// const newUser = createUser('Анна', 25, true)
-// console.log(newUser)
+ const newUser = createUser('Анна', 25, true)
+ console.log(newUser)
 
 /*
  * #3
